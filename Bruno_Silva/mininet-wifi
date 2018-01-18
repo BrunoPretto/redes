@@ -1,0 +1,40 @@
+	QUESTÃO MININET-WIFI
+
+
+
+2.1	tempo de resposta a média 0.122ms, nenhuma perca de pacotes no canal, a transmissão se manteve estável
+
+
+Q 2.2: Use a ferramenta iperf para avaliar a banda disponível (Mbps) entre os nós sta1 e sta2;
+
+2.2	a banda disponível do sta2 foi maior que o sta1;
+
+Q 2.3: Faça um simples comentário para cada uma das informações especificadas na lista de
+parâmetros de sta1.
+
+2.3	1° parametro sudo mn --wifi --position --wmediumd
+	definiu uma posição para o simulador;
+	2° parametro mininet-wifi>py sta1.params 
+	define parametros para o simulador, como informações específicas;
+	3° parametro mininet-wifi>py sta1.params['position']
+	4° parametro mininet-wifi>py sta1.setPosition('10,20,0')
+	especifica a posiçao exata do simulador;
+	5° parametro mininet-wifi>distance sta1 sta2
+	identifica a distancia entre o sta1 e sta2;
+
+3.1	sta3, fora de alcance, não associado ao AP1;
+
+3.2
+
+
+	Questão 3.2: O arquivo acima já vem pré-configurado com um modelo de propagação. Iden-
+tifique um modelo de propagação diferente do configurado e que é suportado pelo Mininet-WiFi
+e então configure esse modelo no código acima. Identifique e descreva abaixo o nível de sinal
+percebido por sta1. Justifique o resultado obtido.
+
+
+
+
+
+
+
